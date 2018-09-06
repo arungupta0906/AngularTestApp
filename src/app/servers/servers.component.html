@@ -1,0 +1,15 @@
+<label>Server Name</label>
+<!--<input type="text"-->
+    <!--class="form-contol"-->
+    <!--(input)="onUpdateServerName($event)">-->
+<input type="text"
+    class="form-contol"
+    [(ngModel)]="serverName">
+<!--<p>{{ serverName }}</p>-->
+<button class="btn btn-primary" 
+    [disabled]="!addNewServer"
+    (click)="onCreateServer()">Add Server</button>
+<!--<p>{{addNewServer}}</p>-->
+<p>{{ serverCreationStatus }}</p>
+<app-server></app-server>
+<app-server></app-server>
